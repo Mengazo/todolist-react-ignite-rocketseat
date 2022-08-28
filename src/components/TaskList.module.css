@@ -1,0 +1,92 @@
+.taskBox {
+    box-sizing: border-box;
+
+    /* Auto layout */
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    max-width: 769px;
+    /* Gray 500 */
+    
+    background: #262626;
+    /* Gray 400 */
+    
+    border: 1px solid #333333;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+}
+
+.taskContent {
+    box-sizing: border-box;
+
+    /* Auto layout */
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 12px;
+    
+}
+
+.taskCheck {
+    background: transparent;
+    color: var(--blue);
+    width: 24px;
+    height: 24px;
+    border-radius: 1rem;
+    border: 2px solid var(--blue);
+    cursor: pointer;
+}
+
+.taskChecked {
+    background: url(../assets/checked.svg) no-repeat center;
+    color: var(--purple);
+    border-radius: 1rem;
+    border: 0;
+    display: flex;
+    align-items: center;
+    width: 24px;
+    line-height: 0;
+    height: 24px;
+    background-size: 24px;
+    cursor: pointer;
+}
+
+
+
+.taskText {
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    width: 632px;
+    height: 20px;
+    /* Gray 300 */
+    color: #F2F2F2;
+}
+
+.taskTextChecked {
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    width: 632px;
+
+    text-decoration-line: line-through;
+    color: var(--gray);
+}
+
+.taskDelete {
+
+    background: transparent;
+    border: 0;
+    color: var(--gray-300);
+    border-radius: 2px;
+    display: flex;
+}

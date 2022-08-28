@@ -1,0 +1,42 @@
+.navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 0.5rem; 
+    justify-content: center;
+    top: -2rem;
+}
+
+.navbar button {
+    border: none;
+    outline: transparent;
+    height: 3.375rem;
+    padding: 1rem;
+    background: var(--blueDark);
+    line-height: 0;
+    color: var(--gray-100);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.navbar textarea {
+    width: 39.875rem;
+    height: 3.375rem;
+    border: 1px black solid;
+    background: var(--gray-500);
+    color: var(--gray-300);
+    padding: 1rem;
+    resize: none;
+    border-radius: 0.5rem;
+    outline: transparent;
+    font-weight: 400;
+}
+
+.taskbar input:focus {
+    color: var(--gray-100);
+}
